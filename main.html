@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <title>Document</title>
+
+    <style>
+        #map { height: 500px; }
+    </style>
 </head>
 <body>
+    <div>
+        <div id="input">
+            <label>위도</label>
+            <input type="text" id="input-latitude"/>
+            <label>경도</label>
+            <input type="text" id="input-longitude"/>
+
+            <button id="submitBtn">변경</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>오늘</th>
+                    <th>내일</th>
+                    <th>모레</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>최고 기온</td>
+                    <td id="today-best">0</td>
+                    <td id="tomorrow-best">0</td>
+                    <td id="day-after-tomorrow-best">0</td>
+                </tr>
+                <tr>
+                    <td>최저 기온</td>
+                    <td id="today-less">0</td>
+                    <td id="tomorrow-less">0</td>
+                    <td id="day-after-tomorrow-less">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>위치</h2>
+        <div id="map"></div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script>
+
+
+
+
+        </script>
+
+
+    </div>
     
+
+
+
+    <script src="main.js"></script>
 </body>
 </html>
